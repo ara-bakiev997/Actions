@@ -1,0 +1,14 @@
+on: 
+  push:
+jobs:
+  build-test:
+    name: Build & Test2
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-java@v4
+        with:
+          java-version: '11'
+          distribution: 'temurin'
+          architecture: x64
+      - name: Display Java version
+        run: java -version
