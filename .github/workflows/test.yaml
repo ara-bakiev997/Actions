@@ -10,5 +10,5 @@ jobs:
           java-version: '11'
           distribution: 'temurin'
           architecture: x64
-      - name: Display Java version 
+      - name: Display Java version
         run: java -version
