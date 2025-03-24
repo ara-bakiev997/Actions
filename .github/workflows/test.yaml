@@ -4,6 +4,7 @@ jobs:
   build-test:
     name: Build & Test2
     runs-on: ubuntu-latest
+    timeout-minutes: 1
     steps:
       - uses: actions/setup-java@v4
         with:
@@ -12,3 +13,5 @@ jobs:
           architecture: x64
       - name: Display Java version
         run: java -version
+      - name: sleep
+        run: sleep 3m
