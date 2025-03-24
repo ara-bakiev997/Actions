@@ -14,4 +14,4 @@ jobs:
       - name: Display Java version
         run: java -version
       - name: sleep
-        run: sleep 3m
+        run: sleep 2m
